@@ -1,39 +1,37 @@
-<Instructions> 
-How to Set Up a Basic Node.js Backend in a Backend Folder
-
-1. Create a New Directory for the Backend
-First, create a directory named `backend` where your backend server files will be stored.
-
-bash
-mkdir backend
-cd backend
-
-2. Initialize a New Node.js Project
-To initialize a new Node.js project in the `backend` directory, run:
-
-bash
-npm init -y
-
-This command will create a `package.json` file with default settings.
-
-3. Install Required Dependencies
-Next, install the necessary dependencies for your backend server. We'll use Express, a popular Node.js framework for building web servers.
-
-bash
-npm install express
-
-To enable easy CORS (Cross-Origin Resource Sharing) between your backend and frontend (since they will run on different ports), you may also want to install the `cors` package:
-
-bash
-npm install cors
-
-4. Create a Basic Express Server
-Create a new file named `index.js` in the `backend` directory. This file will contain the code for your Express server.
-
-
-```javascript
-// backend/index.js
-
+<nodejs_express_setup>
+  <instructions>
+    <title>How to Set Up a Basic Node.js Backend in a Backend Folder</title>
+    <steps>
+      <step>
+        <number>1</number>
+        <description>Create a New Directory for the Backend</description>
+        <action>
+          <command>mkdir backend</command>
+          <command>cd backend</command>
+        </action>
+      </step>
+      <step>
+        <number>2</number>
+        <description>Initialize a New Node.js Project</description>
+        <action>
+          <command>npm init -y</command>
+        </action>
+      </step>
+      <step>
+        <number>3</number>
+        <description>Install Required Dependencies</description>
+        <action>
+          <command>npm install express</command>
+          <command>npm install cors</command>
+        </action>
+      </step>
+      <step>
+        <number>4</number>
+        <description>Create a Basic Express Server</description>
+        <code_file>
+          <name>index.js</name>
+          <content>
+            <![CDATA[
 const express = require('express');
 const cors = require('cors');
 
@@ -55,15 +53,21 @@ app.get('/', (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
-```
-
-5. Start the Backend Server
-To start the backend server, run the following command from the `backend` directory:
-
-bash
-node index.js
-</Instructions>
-
-<Prompt>
-Execute this please, use a MODULAR APPROACH with codeblocks I Run Please:
-</Promt>
+            ]]>
+          </content>
+        </code_file>
+      </step>
+      <step>
+        <number>5</number>
+        <description>Start the Backend Server</description>
+        <action>
+          <command>node index.js</command>
+        </action>
+      </step>
+    </steps>
+  </instructions>
+  
+  <execution>
+    <prompt>Execute this please, use a MODULAR APPROACH with codeblocks I Run Please:</prompt>
+  </execution>
+</nodejs_express_setup>
