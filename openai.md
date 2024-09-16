@@ -1,5 +1,4 @@
-OpenAI API Docs =
-
+<openai_docs>
 Node.js:
 
 import OpenAI from "openai";
@@ -20,3 +19,4 @@ console.log(completion.choices[0].message);
 
 Ensure you have your OpenAI API key in the .env file
 Example: OPENAI_API_KEY=your_api_key_here
+</openai_docs>
