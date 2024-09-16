@@ -18,5 +18,5 @@ const completion = await openai.chat.completions.create({
 
 console.log(completion.choices[0].message);
 
-# Ensure you have your OpenAI API key in the .env file
-# Example: OPENAI_API_KEY=your_api_key_here
+Ensure you have your OpenAI API key in the .env file
+Example: OPENAI_API_KEY=your_api_key_here
